@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    background-size: auto 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header{
+    position: relative;
+    top: -16px;
+}
+
+#menu {
+
+    background: rgb(241, 238, 238);
+    height: 60px;
+}
+#menu ul{
+
+    display: flex;
+    justify-content: space-around;
+   
+}
+#menu li {
+
+    list-style: none;
+}
+
+#menu a{
+    text-decoration:none;
+    color: rgb(15, 15, 15);
+    font-size: 18px;
+    
+}
+
+
+.site-title {
+    color: black;
+    text-align: center;
+    font-size: 50px;
+
+}
+
+.site-subtitle{
+    color: black;
+    text-align: center;
+    font-style: italic;
+    
+    
+}
+
+
