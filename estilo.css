@@ -1,19 +1,35 @@
-body{
+*{
     margin: 0;
-    background-size: auto 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
+body{
+    background-size: auto 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+     height: 100vh;
+}
+
+@media (min-width: 400px) {
+    font-size: 14px;
+}
+
 header{
-    position: relative;
-    top: -16px;
+  
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+ 
 }
 
 #menu {
 
-    background: rgb(241, 238, 238);
+    background: rgb(22, 20, 20);
     height: 60px;
+    position: fixed;
+    width: 100vw;
+    top: 0;
 }
 #menu ul{
 
@@ -28,25 +44,57 @@ header{
 
 #menu a{
     text-decoration:none;
-    color: rgb(15, 15, 15);
+    color: rgb(206, 200, 200);
     font-size: 18px;
+    padding: 15px 10px;
+    display: block;  
+}
+
+ #img{
+    background-image: url(./png/silver-and-black-laptop-computer-3815733.jpg);
+    width: 100vw;
+    height: 400px;
     
 }
+
+
 
 
 .site-title {
     color: black;
     text-align: center;
     font-size: 50px;
-
+    margin: 0;
+    margin-top: 5px;
 }
 
 .site-subtitle{
     color: black;
     text-align: center;
-    font-style: italic;
-    
+    font-style: italic;  
+}
+
+section{
+
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  
+}
+
+figure{
+
+    margin: 40px;
+    text-align: center;
     
 }
+
+
+figure img {
+
+   width: 300px;
+
+}
+
 
 
