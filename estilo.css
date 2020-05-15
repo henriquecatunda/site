@@ -11,6 +11,7 @@ body{
     background-size: auto 100vh;
     font-family: 'Source Code Pro', monospace;
     font-size: 20px;
+    
 
 }
 
@@ -28,7 +29,7 @@ header{
   justify-content: center;
   align-items: center;
   background-image: url(./png/silver-and-black-laptop-computer-3815733.jpg);
-    width: 100vw;
+    width: 100%;
     height: 460px;
 
  
@@ -39,7 +40,8 @@ header{
     background: rgb(22, 20, 20);
     height: 60px;
     position: fixed;
-    width: 100vw;
+    
+    width: 100%;
     top: 0;
 }
 #menu ul{
@@ -59,7 +61,18 @@ header{
     font-size: 18px;
     padding: 15px 10px;
     display: block;  
+    transition: background-color 1s, color 1s;
 }
+
+
+#menu a:hover{
+
+background-color:  rgba(227, 220, 7, 0.705);
+color: black;
+
+
+}
+
 
  #img{
     background-image: url(./png/silver-and-black-laptop-computer-3815733.jpg);
@@ -72,7 +85,7 @@ header{
 
 
 .site-title {
-    color: rgb(236, 234, 234);
+    color: rgba(227, 220, 7, 0.705);
     text-align: center;
     margin: 0;
     margin-top: 80%;
@@ -87,16 +100,18 @@ header{
 
 .portfolio {
 
-  width: 100vw;
-  background-color: #cdcdcd;
+  width: 100%;
+  
   padding: 50px ;
 
 
 }
 
 #portitle {
-    margin-left: 50px;
+   
     margin-bottom: 1.5em;
+    color: #233237;
+    text-align: center;
 }
 
 
@@ -128,9 +143,9 @@ header{
 .portfolio figure {
 
     text-align: center;
-   
-    
-    
+    font-family: Arial, Helvetica, sans-serif;
+    color: #233237;
+
 }
 
 figure img {
@@ -139,9 +154,95 @@ figure img {
     height: 200px;
     object-fit: cover;
     padding: 10px;
-    
-    
+    transition: all 0.5s;
+    cursor: pointer;
 }
+
+figure img:hover{
+
+    transform: scale(1.1);
+    
+
+}
+
+.contato {
+
+    width: 100%;
+    background-color: #233237f5;
+    padding: 50px 50px 80px 50px;
+    
+
+}
+
+#cont {
+  
+    margin-bottom: 1.5em;
+    color:  rgba(227, 220, 7, 0.705);
+    text-align: center;
+   
+}
+
+.contato .gridicons {
+
+    display: grid;
+    gap: 2em;
+
+}
+
+@media (min-width: 560px){
+
+    .contato .gridicons{
+        grid-template-columns: 250px 250px;
+    }
+}
+
+@media (min-width: 880px){
+
+    .contato .gridicons{
+        grid-template-columns: 100px 100px 100px 100px;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+
+
+
+.contato a {
+
+  color: rgb(248, 248, 248);
+  font-size: 13px;
+  text-decoration:none;
+  transition: text-shadow 1s;
+  
+}
+.contato a:active,
+.contato a:hover{
+    text-shadow: 1px 1px 1px rgb(227, 220, 7);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /**
