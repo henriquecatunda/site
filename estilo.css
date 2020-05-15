@@ -15,8 +15,8 @@ body{
 
 }
 
-@media (min-width: 400px) {
-    font-size: 14px;
+@media (min-width: 360px) {
+    font-size: 8px;
 
     figure{
         margin: 40px;     
@@ -29,10 +29,8 @@ header{
   justify-content: center;
   align-items: center;
   background-image: url(./png/silver-and-black-laptop-computer-3815733.jpg);
-    width: 100%;
+    width: 100vw;
     height: 460px;
-
- 
 }
 
 #menu {
@@ -40,48 +38,94 @@ header{
     background: rgb(22, 20, 20);
     height: 60px;
     position: fixed;
-    
-    width: 100%;
+    width: 100vw;
     top: 0;
+    display: flex;
 }
+
 #menu ul{
 
     display: flex;
-    justify-content: space-around;
+    width: 50vw;
+    margin-left: 50px;
    
 }
 #menu li {
 
     list-style: none;
+    margin-right: 20px;
+    
 }
 
-#menu a{
+#menu li a{
     text-decoration:none;
     color: rgb(206, 200, 200);
     font-size: 18px;
     padding: 15px 10px;
     display: block;  
-    transition: background-color 1s, color 1s;
+    transition: color 1s;
+   
 }
-
 
 #menu a:hover{
 
-background-color:  rgba(227, 220, 7, 0.705);
-color: black;
+color:  rgba(227, 220, 7, 0.705);
+}
 
+#menu .gridicons  {
 
+    width: 50vw;
+    margin-top: 10px;
+    padding:  0 10vw;
+}
+
+#menu .gridicons a {
+
+  color: rgb(248, 248, 248);
+  font-size: 13px;
+  text-decoration:none;
+  transition: text-shadow 1s; 
+  margin-right: 20px;
+  
+  
 }
 
 
- #img{
+#menu .gridicons img {
+
+    width: 40px;
+    height: 40px;
+    transition:  box-shadow  0.5s; 
+    border-radius: 50%;
+}
+
+
+#menu  .gridicons a img:hover{
+
+   box-shadow: 0px 0px 5px rgb(255, 255, 255);;;
+}
+
+#img{
     background-image: url(./png/silver-and-black-laptop-computer-3815733.jpg);
     width: 100vw;
     height: 400px;
     
 }
 
+@media (max-width: 930px) {
 
+    #menu {
+
+        display: block;
+        position: absolute;
+    }
+
+    #menu .gridicons  {
+        margin-top: 40px;
+        width: 100vw;
+
+    }   
+}
 
 
 .site-title {
@@ -100,17 +144,15 @@ color: black;
 
 .portfolio {
 
-  width: 100%;
-  
+  width: 100vw;
   padding: 50px ;
-
-
+  background-color: #233237f3;
 }
 
 #portitle {
    
     margin-bottom: 1.5em;
-    color: #233237fa;
+    color:  rgb(255, 255, 255);
     text-align: center;
 }
 
@@ -144,7 +186,7 @@ color: black;
 
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: #233237;
+    color: #ffffffc9;
 
 }
 
@@ -167,8 +209,8 @@ figure img:hover{
 
 .contato {
 
-    width: 100%;
-    background-color: #233237f5;
+    width: 100vw;
+    
     padding: 50px 50px 80px 50px;
     
 
@@ -177,12 +219,12 @@ figure img:hover{
 #cont {
   
     margin-bottom: 1.5em;
-    color:  rgba(227, 220, 7, 0.705);
+    color:  rgb(0, 0, 0);
     text-align: center;
    
 }
 
-.contato .gridicons {
+.contato .ramos{
 
     display: grid;
     gap: 2em;
@@ -191,122 +233,105 @@ figure img:hover{
 
 @media (min-width: 560px){
 
-    .contato .gridicons{
+    .contato .ramos{
         grid-template-columns: 250px 250px;
     }
 }
 
 @media (min-width: 880px){
 
-    .contato .gridicons{
-        grid-template-columns: 100px 100px 100px 100px;
+    .contato .ramos{
+        grid-template-columns: 250px 250px 250px 250px;
         align-content: center;
         justify-content: center;
     }
 }
 
+.contato p {
 
-
-
-.contato a {
-
-  color: rgb(248, 248, 248);
-  font-size: 13px;
-  text-decoration:none;
-  transition: text-shadow 1s; 
-  
+    text-align: justify;
+    line-height: 30px;
+    margin-top: 20px;
 }
 
+.contato h3 {
 
-.contato img {
-
-    width: 80px;
-    height: 80px;
-    transition:  box-shadow  0.5s; 
-    border-radius: 50%;
-}
-
-
-.contato a img:hover{
-
-   box-shadow: 0px 0px 5px rgb(255, 255, 255);;;
-}
-
-.contato a:active,
-.contato a:hover{
-    text-shadow: 1px 1px 1px rgb(227, 220, 7);
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.gred {
-
-    display: flex;
-    justify-content: space-around;
-    margin: 80px 20px;
-    
-}
-
-figure{
-
+    padding: 5px;
+    background-color: rgb(231, 230, 230);
+    color: rgba(0, 0, 0, 0.89);
     text-align: center;
-    font-family: 'Source Code Pro', monospace;
    
+}
+
+
+.sobre {
+
+  display: block;
+  width: 100vw;
+  justify-content: center;
+  padding: 10px;
+
+}
+
+@media (min-width:  900px){
+
+    .sobre {
+
+        display: flex;
+        justify-content: center;
+        padding: 70px 50px;
+      }
+
+}
+
+.sobre h3 {
+
+  text-align: center;
+  padding-bottom: 10px;
+
+}
+
+
+
+#formação {
+    color: #233237f5; 
+    margin-right :40px;
+    margin-left :50px;
+    text-align: justify;
+    text-indent: 1em;
+    line-height: 30px;
+    margin-top: 20px;
+
+
+}
+
+#objetivo{
+
+    color: #233237f5; 
+    margin-left :40px;
+    margin-right :50px;
+    text-indent: 1em;
+    text-align: justify;
+    line-height: 30px;
+    margin-top: 20px;
+
     
 }
 
 
-figure img {
+@media (min-width:  900px){
 
-   width: 200px;
-   height: 200px;
+    .container {
 
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: right bottom;
-   
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1400px;
+      }
+
 }
+
+
+
+
+
 
