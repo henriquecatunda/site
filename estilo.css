@@ -213,14 +213,34 @@ figure img:hover{
   color: rgb(248, 248, 248);
   font-size: 13px;
   text-decoration:none;
-  transition: text-shadow 1s;
+  transition: text-shadow 1s; 
   
 }
+
+
+.contato img {
+
+    width: 80px;
+    height: 80px;
+    transition:  box-shadow  0.5s; 
+    border-radius: 50%;
+}
+
+
+.contato a img:hover{
+
+   box-shadow: 0px 0px 5px rgb(255, 255, 255);;;
+}
+
 .contato a:active,
 .contato a:hover{
     text-shadow: 1px 1px 1px rgb(227, 220, 7);
 
 }
+
+
+
+
 
 
 
