@@ -145,8 +145,8 @@ color:  rgba(145, 141, 9, 0.938);
 
 .foto {
 
-white-space: 100px;
-height: 100px;
+white-space: 110px;
+height: 110px;
 border-radius: 50%;
 float: left;
 margin-top: 68%;
@@ -159,7 +159,6 @@ margin-top: 68%;
     text-align: center;
     margin: 0;
     margin-top: 73%;
-    
 }
 
 .site-subtitle{
