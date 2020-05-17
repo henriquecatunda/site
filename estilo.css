@@ -12,9 +12,6 @@ body{
     font-family: 'Source Code Pro', monospace;
     font-size: 19px;
    
-  
-    
-
 }
 
 @media (min-width: 360px) {
@@ -25,15 +22,18 @@ body{
     }
 }
 
+
+
+
 header{
   
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(./png/silver-and-black-laptop-computer-3815733.jpg);
+  justify-content: left;
+  background-image: url(black-computer-tablet-beside-black-ceramic-cup-3740449\ \(1\).jpg);
     width: 100%;
     height: 630px;
     background-size: cover;
+  
 }
 
 #menu {
@@ -85,7 +85,7 @@ color:  rgba(145, 141, 9, 0.938);
 #menu .gridicons  {
 
     width: 50vw;
-    margin-top: 10px;
+    margin-top: 12px;
     padding:  0 10vw;
 }
 
@@ -97,7 +97,6 @@ color:  rgba(145, 141, 9, 0.938);
   transition: text-shadow 1s; 
   margin-right: 20px;
   
-  
 }
 
 
@@ -105,14 +104,16 @@ color:  rgba(145, 141, 9, 0.938);
 
     width: 40px;
     height: 40px;
-    transition:  box-shadow  0.5s; 
+    transition:  box-shadow  0.5s, background-color 0.5; 
     border-radius: 50%;
+   
 }
 
 
 #menu  .gridicons a img:hover{
 
-   box-shadow: 0px 0px 6px  rgb(43, 42, 18);
+    box-shadow: 0px 0px 5px rgb(54, 54, 54);
+  
 }
 
 #img{
@@ -140,26 +141,30 @@ color:  rgba(145, 141, 9, 0.938);
 .titulo {
 
     width: 40%;
+    padding-left: 35px;
+  
 }
 
 
-.foto {
+.titulo  .foto {
 
-white-space: 110px;
+width: 110px;
 height: 110px;
 border-radius: 50%;
-float: left;
+float: left; 
 margin-top: 68%;
-
+margin-left: 30px;
+margin-right: 20px; 
 }
 
 
 .site-title {
+ 
     color: rgba(255, 255, 255, 0.87);
     text-align: center;
-    margin: 0;
     margin-top: 73%;
     font-family: 'Merienda', cursive;
+    
 }
 
 .site-subtitle{
@@ -262,8 +267,8 @@ figure img:hover{
 .contato {
 
     width: 100%;
-    padding: 50px 50px 80px 50px;
-    
+    padding: 50px 50px 100px 50px;
+   
 
 }
 
@@ -296,6 +301,14 @@ figure img:hover{
         align-content: center;
         justify-content: center;
     }
+}
+
+
+.contato .ramos hr{
+
+    border: 0;
+    background-color: rgba(185, 168, 20, 0.774);
+    height: 3px;
 }
 
 .contato p {
@@ -385,8 +398,7 @@ figure img:hover{
 
     width: 100%;
     height: 100px;
-    background-color: rgba(0, 0, 0, 0.89);
-
+    background-color: #080b0c;
 }
 
 .rotape p{
