@@ -45,11 +45,12 @@ header{
 #menu {
 
     background: rgb(255, 255, 255);
-    height: 70px;
+    height: 75px;
     position: fixed;
     width: 100vw;
     top: 0;
     display: flex;
+    box-shadow: 1px 0px 7px grey ;
 }
 
 #menu ul{
@@ -69,9 +70,9 @@ header{
 
 #menu li a{
     text-decoration:none;
-    color: rgb(0, 0, 0);
+    color: rgb(34, 33, 33);
     font-size: 16px;
-    padding: 15px 10px;
+    padding: 18px 10px;
     display: block;  
     transition: color 1s;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -85,13 +86,14 @@ header{
 
 #menu a:hover{
 
-color:  rgba(145, 141, 9, 0.938);
+color: rgb(16, 116, 111);
+
 }
 
 #menu .gridicons  {
 
     width: 50vw;
-    margin-top: 12px;
+    margin-top: 15px;
     padding:  0 10vw;
 }
 
@@ -118,7 +120,7 @@ color:  rgba(145, 141, 9, 0.938);
 
 #menu  .gridicons a img:hover{
 
-    box-shadow: 0px 0px 5px rgb(54, 54, 54);
+    box-shadow: 1px 1px 5px rgb(54, 54, 54);
   
 }
 
@@ -146,8 +148,9 @@ color:  rgba(145, 141, 9, 0.938);
 
 .titulo {
 
-    width: 40%;
+    width: 50%;
     padding-left: 35px;
+    display: flex;
   
 }
 
@@ -157,10 +160,9 @@ color:  rgba(145, 141, 9, 0.938);
 width: 110px;
 height: 110px;
 border-radius: 50%;
-float: left; 
-margin-top: 68%;
+margin-top: 60%;
 margin-left: 30px;
-margin-right: 20px; 
+margin-right: 15px; 
 }
 
 
@@ -168,8 +170,9 @@ margin-right: 20px;
  
     color: rgba(255, 255, 255, 0.87);
     text-align: center;
-    margin-top: 73%;
-    font-family: 'Merienda', cursive;
+    margin-top: 65%;
+    
+   
     
 }
 
@@ -182,9 +185,9 @@ margin-right: 20px;
 .portfolio {
 
   width: 100%;
-  padding: 50px ;
+  padding: 75px ;
   padding-bottom: 90px;
-  background-color: rgba(238, 238, 238, 0.664);
+  background-color: rgba(238, 238, 238, 0.685);
   
 }
 
@@ -206,14 +209,14 @@ margin-right: 20px;
 @media (min-width: 560px){
 
     .portfolio .grid{
-        grid-template-columns: 250px 250px;
+        grid-template-columns: 350px 350px;
     }
 }
 
 @media (min-width: 880px){
 
     .portfolio .grid{
-        grid-template-columns: 250px 250px 250px;
+        grid-template-columns: 350px 350px 350px;
         align-content: center;
         justify-content: center;
     }
@@ -226,46 +229,27 @@ margin-right: 20px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: #111010c9;
-   
-    border-radius: 14px;
     padding-bottom: 5px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
-.portfolio .grid #gridimg{
-
-    padding-top: 30px;
-}
-
-.portfolio .grid #gridimg figure {
-
-    padding-top: 0;
-  
-}
-
-.portfolio .grid #gridimg figure #espa {
-
-    padding-bottom: 13px;
-    padding-top: 13px;
-  
-}
 
 figure img {
 
-    width: 250px;
-    height: 200px;
+    width: 350px;
+    height: 300px;
     object-fit: cover;
-    padding: 10px;
+    padding: 5px;
     transition: all 0.3s;
     cursor: pointer;
-    border-radius: 24px;
+   
 
 }
 
 figure img:hover{
 
-    transform: scale(1.1);
+    transform: scale(1.05);
     
 
 }
@@ -273,9 +257,8 @@ figure img:hover{
 .contato {
 
     width: 100%;
-    padding: 50px 50px 100px 50px;
+    padding: 60px 50px 100px 50px;
    
-
 }
 
 #cont {
@@ -283,6 +266,7 @@ figure img:hover{
     margin-bottom: 1.2em;
     color:  rgb(0, 0, 0);
     text-align: center;
+    margin-top: 20px;
    
 }
 
@@ -290,6 +274,7 @@ figure img:hover{
 
     display: grid;
     gap: 2em;
+     
 
 }
 
@@ -297,18 +282,33 @@ figure img:hover{
 
     .contato .ramos{
         grid-template-columns: 250px 250px;
+ 
     }
 }
 
 @media (min-width: 880px){
 
     .contato .ramos{
-        grid-template-columns: 250px 250px 250px 250px;
+        grid-template-columns: 320px 320px 320px ;
         align-content: center;
         justify-content: center;
+      
+      
     }
 }
 
+.contato .ramos div {
+    border: solid 1px rgb(172, 171, 171);
+    border-radius: 8px;
+
+}
+
+.contato .ramos div:hover {
+
+    box-shadow: 0px 0px 7px grey ;
+    
+
+}
 
 .contato  hr{
 
@@ -320,8 +320,10 @@ figure img:hover{
 .contato p {
 
     text-align: justify;
-    line-height: 30px;
+    line-height: 26px;
     margin-top: 15px;
+    margin: 19px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .contato h3 {
@@ -340,25 +342,28 @@ figure img:hover{
   width: 100%;
   justify-content: center;
   padding: 10px;
+  
 
 }
 
 @media (min-width:  900px){
 
-    .sobre {
+    .sobremim {
 
         display: flex;
         justify-content: center;
-        padding: 50px 50px;
+        padding: 20px 50px;
       }
 
 }
 
-.sobre h3 {
+.sobre h2 {
 
   text-align: center;
-  padding-bottom: 10px;
+  padding-top: 75px;
+  
 }
+
 
 
 
@@ -368,8 +373,9 @@ figure img:hover{
     margin-left :50px;
     text-align: justify;
     text-indent: 1em;
-    line-height: 30px;
+    line-height: 27px;
     margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 
 
 }
@@ -383,14 +389,15 @@ figure img:hover{
 
 .sobre #linkfor a  {
 
-    background-color: rgba(196, 189, 1, 0.904);
-    padding: 5px;
+    background-color: rgb(28, 156, 150);
+
+    padding: 9px;
     margin: 10px;
     font-size: 14px;
     font-weight: bold;
     transition:  background-color 0.5;
     color: rgb(255, 255, 255);
-    border-radius: 5px;
+    border-radius: 25px;
     
 }
 
@@ -435,8 +442,9 @@ figure img:hover{
     margin-right :50px;
     text-indent: 1em;
     text-align: justify;
-    line-height: 30px;
+    line-height: 27px;
     margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 
     
 }
@@ -454,20 +462,50 @@ figure img:hover{
 }
 
 
+.curso {
+
+    width: 100%;
+    padding: 60px 50px 100px 50px;
+    background-color: rgba(238, 238, 238, 0.726);
+     height: 600px;
+   
+
+}
+
+#cursotitle {
+  
+    margin-bottom: 1.2em;
+    color:  rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 20px;
+   
+}
+
+.curso li{
+
+  
+    font-size: 20px; 
+    margin-left: 100px;
+    line-height: 27px;
+    font-weight: bold;
+    color: rgb(49, 49, 49);
+
+}
+
 .rotape {
 
     width: 100%;
     height: 100px;
-    background-color: #080b0c;
+    background-color: rgb(16, 116, 111);
 }
 
 .rotape p{
 
-    color: white;
+    color: rgb(231, 228, 228);
     padding-left: 50px;
     padding-top: 50px;
     text-align: center;
-    font-size: 11px;
+    font-size: 15px;
 }
 
 
