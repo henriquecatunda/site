@@ -185,7 +185,7 @@ margin-right: 15px;
 .portfolio {
 
   width: 100%;
-  padding: 75px ;
+  padding: 85px ;
   padding-bottom: 90px;
   background-color: rgba(238, 238, 238, 0.685);
   
@@ -467,7 +467,7 @@ figure img:hover{
     width: 100%;
     padding: 60px 50px 100px 50px;
     background-color: rgba(238, 238, 238, 0.726);
-     height: 600px;
+     
    
 
 }
@@ -481,14 +481,25 @@ figure img:hover{
    
 }
 
+.curso div {
+
+    margin-left: 130px;
+}
+
+.curso h4 {
+
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
 .curso li{
 
   
     font-size: 20px; 
-    margin-left: 100px;
+    margin-left: 20px;
     line-height: 27px;
     font-weight: bold;
-    color: rgb(49, 49, 49);
+    color: rgb(77, 75, 75);
 
 }
 
