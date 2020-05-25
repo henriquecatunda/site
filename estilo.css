@@ -112,10 +112,7 @@ header{
   
 }
 
-#menu li a img {
 
-   margin-top: -5px;
-}
 
 #menu a:hover{
 
@@ -273,17 +270,6 @@ margin-right: 15px;
 }
 
 
-
-.portfolio figure {
-
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #111010c9;
-    padding-bottom: 5px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-}
-
 .figure-card {
     width: 350px;
     height: 300px;
@@ -393,22 +379,9 @@ margin-right: 15px;
 }
 
 
-
-figure img {
-
-    width: 350px;
-    height: 300px;
-    object-fit: cover;
-    padding: 5px;
-    transition: all 0.3s;
-    cursor: pointer;
-   
-
-}
-
 @media (max-width: 450px){
 
-    figure img {
+    .link-card img {
 
         width: 250px;
         height: 200px;
@@ -424,12 +397,6 @@ figure img {
     
 }
 
-figure img:hover{
-
-    transform: scale(1.05);
-    
-
-}
 
 
 
@@ -548,6 +515,7 @@ figure img:hover{
 
 
 #formação {
+    
     color: #040607; 
     margin-right :40px;
     margin-left :50px;
@@ -560,6 +528,9 @@ figure img:hover{
 
 }
 
+#formação p {
+    width: 500px;
+}
 .sobre #linkfor {
     margin-top: 25px;
     text-align: center;
