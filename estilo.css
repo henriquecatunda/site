@@ -42,6 +42,7 @@ header{
     width: 100%;
     height: 630px;
     background-size: cover;
+    
   
 }
 
@@ -55,7 +56,9 @@ header{
     display: flex;
     box-shadow: 1px 0px 8px grey ;
     align-items: center;
+    z-index: 1;
 }
+
 
 #menu ul{
 
@@ -65,6 +68,8 @@ header{
     margin-top: 8px;
    
 }
+
+
 #menu li {
 
     list-style: none;
@@ -81,6 +86,30 @@ header{
     transition: color 1s;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    
+}
+
+@media (max-width: 500px) {
+    #menu ul{
+        
+        width: 100vw;  
+        margin-left: 0px;
+    }
+
+    #menu li {
+
+       
+        margin-right: 0px;
+        
+    }
+
+    #menu li a{
+
+       
+        font-size: 12px;
+    }
+
+
+  
 }
 
 #menu li a img {
@@ -154,12 +183,19 @@ color: rgb(16, 116, 111);
 
     width: 50%;
     padding-left: 35px;
-    
 
-    
-  
 }
 
+@media (max-width: 500px) {
+
+    .titulo {
+
+        width: 100%;
+        margin-top: 110px;
+
+    }
+   
+}
 
 .titulo  .foto {
 
@@ -248,6 +284,115 @@ margin-right: 15px;
 
 }
 
+.figure-card {
+    width: 350px;
+    height: 300px;
+    position: relative;
+}
+
+.figure-card img {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.text-card {
+    background-color: rgba(29, 151, 145, 0.8);
+    width: 350px;
+    height: 300px;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    
+}
+
+.figure-card:hover .text-card:hover{
+
+   
+    opacity: 1;
+    
+}
+
+.text-card:hover .titulo-card {
+
+    animation-name: move;
+    animation-duration: 700ms;
+}
+
+.text-card:hover .link-card {
+
+    animation-name: mover;
+    animation-duration: 700ms;
+}
+
+
+
+@keyframes move {
+    
+    from {
+
+       
+        transform: translateY(-50%);
+    }to {
+        
+        transform: translateY(0);
+    }
+    
+}
+
+@keyframes mover {
+    
+    from {
+
+        transform: translateY(50%);
+    }to {
+
+        transform: translateY(0);
+    }
+    
+}
+
+
+
+.conteudo-card {
+    color: white;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+
+
+.titulo-card {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.link-card {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.link-card img {
+
+    width: 29px;
+    height: 29px;
+    margin: 10px;
+}
+
+
 
 figure img {
 
@@ -265,14 +410,14 @@ figure img {
 
     figure img {
 
-        width: 150px;
-        height: 100px;
+        width: 250px;
+        height: 200px;
     
     }
 
     .portfolio {
 
-        padding: 15px ;
+        padding: 10px ;
          padding-bottom: 40px;
 
     }
@@ -428,6 +573,7 @@ figure img:hover{
 
     padding: 9px 12px;
     padding-left: 18px;
+    padding-right: 18px;
     margin: 10px;
     font-size: 14px;
     font-weight: bold;
@@ -486,6 +632,17 @@ figure img:hover{
 }
 
 
+@media (max-width:  600px){
+
+    #objetivo{
+
+        margin-bottom: 40px;
+    }
+
+
+}
+
+
 @media (min-width:  900px){
 
     .container {
@@ -526,12 +683,9 @@ figure img:hover{
     margin-top: 15px;
     font-weight: bold;
     text-align: center;
-    width: 150px;
     padding: 6px;
-   
     border-radius: 5px;
     color: rgb(0, 0, 0);
-    margin-left: 100px;
     
 }
 
@@ -541,6 +695,27 @@ figure img:hover{
     justify-content: center;
     margin-left: 50px;
     
+}
+
+@media (max-width: 500px) {
+
+    .curso .cursoflex{
+
+        display: block;
+        justify-content: center;
+        margin-left: 0px;
+        
+    }
+
+    .curso h4 {
+
+        margin-left: 0px;
+        text-align: center;
+        margin-right: 0px;
+    }
+
+
+
 }
 
 .curso ul {
@@ -564,17 +739,22 @@ figure img:hover{
 .rotape {
 
     width: 100%;
-    height: 100px;
+    padding: 20px;
     background-color: rgb(16, 116, 111);
 }
 
-.rotape p{
+.rotape #autor{
 
     color: rgb(231, 228, 228);
     padding-left: 50px;
     padding-top: 50px;
     text-align: center;
     font-size: 15px;
+}
+
+.rotape p {
+
+    font-size: 11px;
 }
 
 
