@@ -23,8 +23,7 @@ p{
 }
 
 @media (min-width: 360px) {
-    font-size: 8px;
-
+    
     figure{
         margin: 5px;     
     }
@@ -250,8 +249,11 @@ margin-right: 15px;
 
     display: grid;
     gap: 2em;
-   
+    grid-template-columns: 250px ;
+    justify-content: center;
 }
+
+
 
 @media (min-width: 560px){
 
@@ -304,7 +306,7 @@ margin-right: 15px;
     opacity: 1;
     
 }
-
+.text-card:active .titulo-card,
 .text-card:hover .titulo-card {
 
     animation-name: move;
@@ -344,7 +346,40 @@ margin-right: 15px;
     
 }
 
+@media (max-width: 450px){
 
+
+
+
+    .figure-card{
+        width: 250px;
+        height: 200px;
+        justify-content: center;
+
+    }
+
+    .figure-card img {
+
+        width: 250px;
+        height: 200px;
+    
+    }
+
+    .text-card {
+
+        width: 250px;
+        height: 200px;
+
+    }
+
+    .portfolio {
+
+         padding: 10px ;
+         padding-bottom: 40px;
+
+    }
+    
+}
 
 .conteudo-card {
     color: white;
@@ -379,23 +414,7 @@ margin-right: 15px;
 }
 
 
-@media (max-width: 450px){
 
-    .link-card img {
-
-        width: 250px;
-        height: 200px;
-    
-    }
-
-    .portfolio {
-
-        padding: 10px ;
-         padding-bottom: 40px;
-
-    }
-    
-}
 
 
 
@@ -422,6 +441,16 @@ margin-right: 15px;
     gap: 2em;
      
 
+}
+
+@media (max-width: 560px){
+
+    .contato {
+
+        width: 100%;
+        padding: 60px 20px 100px 20px;
+       
+    }
 }
 
 @media (min-width: 560px){
@@ -483,6 +512,15 @@ margin-right: 15px;
 }
 
 
+@media (max-width: 560px){
+
+    .contato .ramos div {
+
+        margin-bottom: 10px;
+
+    }
+}
+
 .sobre {
 
   display: block;
@@ -529,13 +567,32 @@ margin-right: 15px;
 }
 
 #formação p {
-    width: 500px;
-}
-.sobre #linkfor {
-    margin-top: 25px;
-    text-align: center;
-    height: 50px;
 
+    margin-bottom: 9px;
+
+}
+
+
+@media (min-width:  1000px){
+
+    #formação p {
+
+     width: 500px;
+     
+     
+
+}
+}
+
+
+@media (min-width:  900px){
+    .sobre #linkfor {
+        margin-top: 25px;
+        text-align: center;
+        height: 50px;
+        
+
+    }
 }
 
 .sobre #linkfor a  {
@@ -603,7 +660,7 @@ margin-right: 15px;
 }
 
 
-@media (max-width:  600px){
+@media (max-width:  1000px){
 
     #objetivo{
 
@@ -728,6 +785,14 @@ margin-right: 15px;
     font-size: 11px;
 }
 
+@media (max-width: 600px){
+
+    .rotape #autor{
+
+        margin-bottom: 15PX;
+
+    }
+}
 
 
 
