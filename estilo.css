@@ -22,17 +22,6 @@ p{
     font-size: 17px;
 }
 
-@media (min-width: 360px) {
-    
-    figure{
-        margin: 5px;     
-    }
-  
-}
-
-
-
-
 header{
   
   display: flex;
@@ -44,6 +33,7 @@ header{
     
   
 }
+
 
 #menu {
 
@@ -139,8 +129,8 @@ color: rgb(16, 116, 111);
 
 #menu .gridicons img {
 
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     transition:  box-shadow  0.5s, background-color 0.5; 
     border-radius: 50%;
    
@@ -153,12 +143,6 @@ color: rgb(16, 116, 111);
   
 }
 
-#img{
-    background-image: url(./png/silver-and-black-laptop-computer-3815733.jpg);
-    width: 100vw;
-    height: 400px;
-    
-}
 
 @media (max-width: 930px) {
 
@@ -172,7 +156,16 @@ color: rgb(16, 116, 111);
         margin-top: 40px;
         width: 100vw;
 
-    }   
+    }
+
+    #menu .gridicons img {
+
+        background: white;
+        border: white 1px solid;
+        margin-top: 40px;
+       
+    }
+    
 }
 
 .titulo {
@@ -555,8 +548,6 @@ margin-right: 15px;
 }
 
 
-
-
 #formação {
     
     color: #040607; 
@@ -567,26 +558,21 @@ margin-right: 15px;
     line-height: 27px;
     margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
-
-
 }
 
 #formação p {
 
     margin-bottom: 9px;
-
+    
 }
 
 
 @media (min-width:  1000px){
 
-    #formação p {
+        #formação p {
 
-     width: 500px;
-     
-     
-
-}
+        width: 520px;  
+    }
 }
 
 
@@ -603,7 +589,6 @@ margin-right: 15px;
 .sobre #linkfor a  {
 
     background-color: rgb(28, 156, 150);
-
     padding: 9px 12px;
     padding-left: 18px;
     padding-right: 18px;
@@ -620,35 +605,6 @@ margin-right: 15px;
 
     background-color: rgba(0, 0, 0, 0.767);
 }
-
-
-.sobre #formação ol{
-
-    margin-top: 15px;
-}
-
-.sobre #formação li  {
-
-    font-size: 16px;
-    list-style: inside;
-    
-}
-
-.sobre #formação li a {
-
-    text-decoration:none;
-    color: rgb(2, 4, 87);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-    transition: color 0.5;
-   
-}
-
-.sobre #formação li a:hover {
-
-    color: rgb(80, 83, 235);
-}
-
 
 #objetivo{
 
