@@ -278,6 +278,11 @@ margin-right: 15px;
     position: relative;
 }
 
+.figure-card p {
+
+    text-align: center;
+}
+
 .figure-card img {
     width: 350px;
     height: 300px;
