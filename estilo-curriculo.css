@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    list-style: none;
+    text-decoration:none;
+}
+
+
+body{
+    background-size: auto 100vh;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 15px;
+   background-color: rgb(209, 207, 207);
+   
+   
+}
+
+.conteudo {
+
+    width: 800px;
+    background-color: white;
+    margin: auto;
+}
+
+section {
+
+ display: flex;
+ width: 850px;
+ justify-content: center;
+ background: white;
+ text-align: center;
+ color: white;
+}
+
+.formação {
+
+    width: 350px;
+    height: 1000px;
+    background-color: rgb(37, 37, 37);
+
+}
+
+.dados-formação {
+
+    margin-top: 60px;
+}
+
+.dados-formação .curriculo-nome h2 {
+
+    font-size: 38px;
+    margin: 4px;
+    margin-left: 25px;
+    text-align: left;
+    
+}
+
+.dados-formação .curriculo-profissão p {
+
+    margin-top: 20px;
+    font-size: 13px;
+
+}
+
+
+.dados-localização {
+
+   
+    text-align: justify;
+    margin: 40px;
+    margin-top: 80px;
+
+}
+
+.formação-faculdade {
+
+   
+    text-align: justify;
+    margin: 40px;
+    margin-top: 70px;
+}
+
+.formação-faculdade p {
+
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+.experiencias {
+
+width: 500px;
+height: 1000px;
+}
