@@ -199,14 +199,14 @@ margin-right: 15px;
 
 .site-title {
  
-    color: rgba(255, 255, 255, 0.87);
+    color:  rgb(255, 255, 255);
   
     margin-top: 55%;
-    font-size: 43px;
+    font-size: 44px;
 }
 
 .site-subtitle{
-    color: rgb(184, 178, 178);
+    color: rgb(18, 184, 175);
     margin-top: 7px;
     width: 80%;
 

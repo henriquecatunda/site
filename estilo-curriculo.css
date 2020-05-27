@@ -86,16 +86,70 @@ section {
     margin-top: 20px;
 }
 
+.dados-social{
 
+    text-align: justify;
+    margin: 40px;
+    margin-top: 70px;
+    
+}
 
+.dados-social  h2{
 
+    margin-bottom: 20px;
+}
 
+.dados-social div {
 
+    margin-top: 5px;
+    font-size: 17px;
+    
+}
 
+.dados-social div a {
 
+    color: rgb(23, 158, 221);
+    text-align: center;
+}
 
 .experiencias {
 
 width: 500px;
 height: 1000px;
+color: black;
+
+}
+
+.atividade-complementar{
+
+    text-align: justify;
+    margin: 40px;
+    margin-top: 70px;
+    
+
+}
+
+.atividade-complementar h2{
+
+    text-align: center;
+}
+
+.atividade-complementar .experiencias-formação p  {
+
+
+    margin-top: 20px;
+}
+
+
+.habilidades{
+    text-align: justify;
+    margin: 40px;
+    margin-top: 7=60px;
+
+}
+
+
+.habilidades .habilidade-flex{
+
+    display: flex;
 }
