@@ -10,10 +10,8 @@
 
 body{
     background-size: auto 100vh;
-    font-family: 'Source Code Pro', monospace;
     font-size: 19px;
-   
-   
+    font-family: 'Roboto', sans-serif;
    
 }
 
@@ -26,9 +24,9 @@ header{
   
   display: flex;
   justify-content: left;
-  background-image: url(../png/black-computer-tablet-beside-black-ceramic-cup-3740449\ \(1\).jpg);
+  background-image: url(../png/Desktop\ -\ 3\ \(4\).svg);
     width: 100%;
-    height: 630px;
+    height: 660px;
     background-size: cover;
     
   
@@ -38,7 +36,7 @@ header{
 #menu {
 
     background: rgb(255, 255, 255);
-    height: 78px;
+    height: 76px;
     position: fixed;
     width: 100vw;
     top: 0;
@@ -73,7 +71,7 @@ header{
     padding: 18px 10px;
     display: block;  
     transition: color 1s;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
    
 }
 
@@ -93,7 +91,7 @@ header{
 
     #menu li a{
 
-       
+        padding: 18px 8px;
         font-size: 12px;
     }
 
@@ -109,39 +107,7 @@ color: rgb(16, 116, 111);
 
 }
 
-#menu .gridicons  {
 
-    width: 50vw;
-    margin-top: 9px;
-    padding:  0 10vw;
-}
-
-#menu .gridicons a {
-
-  color: rgb(248, 248, 248);
-  font-size: 13px;
-  text-decoration:none;
-  transition: text-shadow 1s; 
-  margin-right: 20px;
-  
-}
-
-
-#menu .gridicons img {
-
-    width: 30px;
-    height: 30px;
-    transition:  box-shadow  0.5s, background-color 0.5; 
-    border-radius: 50%;
-   
-}
-
-
-#menu  .gridicons a img:hover{
-
-    box-shadow: 0px 0px 6px rgb(54, 54, 54);
-  
-}
 
 
 @media (max-width: 930px) {
@@ -168,10 +134,20 @@ color: rgb(16, 116, 111);
     
 }
 
+.menu-fundo{
+
+    display: flex;
+    width: 100%;
+}
+
 .titulo {
 
     width: 50%;
-    padding-left: 35px;
+    display: flex;
+    margin-top: 9%;
+    flex-direction: column;
+    justify-content: center;
+   
 
 }
 
@@ -186,40 +162,162 @@ color: rgb(16, 116, 111);
    
 }
 
-.titulo  .foto {
-
-width: 110px;
-height: 110px;
-border-radius: 50%;
-margin-top: 60%;
-margin-left: 30px;
-margin-right: 15px; 
+.titulo h4{
+    color: #03A8B2;
+    font-size: 38px;
+    margin-left: 60px;
+    font-family: 'Montserrat', sans-serif;
+ 
 }
-
 
 .site-title {
  
-    color:  rgb(255, 255, 255);
-  
-    margin-top: 55%;
-    font-size: 44px;
+    color:  rgb(34, 34, 34);
+    margin-left: 60px;
+    margin-top: 15px;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    
+   
+
 }
 
 .site-subtitle{
-    color: rgb(18, 184, 175);
-    margin-top: 7px;
-    width: 80%;
+    color: rgb(39, 39, 39);
+    margin-top: 20px;
+    width: 60%;
+    margin-left: 60px;
+    font-family: 'Montserrat', sans-serif;
+}
 
+
+@media (max-width:  900px){
+    .titulo h4{ 
+        margin-left: 10px;
+     
+    }
+    
+    .site-title {
+        margin-left: 10px;
+
+    }
+    
+    .site-subtitle{
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+
+    .titulo #linkfor {
+
+        margin-left: 10px;
+    }
+
+}
+
+@media (min-width:  900px){
+    .titulo #linkfor {
+        margin-top: 35px;
+        margin-left: 60px;
+        height: 45px;
+        width: 300px;
+    }
+}
+
+.titulo #linkfor a  {
+
+    background-color: #03A8B2;
+    padding: 11px 14px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 17px;
+    transition:  background-color 0.5;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    
+}
+
+.titulo #linkfor a:hover{
+
+    background-color: rgba(0, 0, 0, 0.767);
+}
+
+
+.menu-fundo .gridicons  {
+
+    width: 50vw;
+    margin-top: 9px;
+    padding:  0 3vw;
+    display: flex;
+    margin-bottom: 120px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+   
+   
+  
+}
+
+.menu-fundo .gridicons a {
+
+  color: rgb(248, 248, 248);
+  font-size: 13px;
+  text-decoration:none;
+  transition: text-shadow 1s; 
+  margin: 8px;
+  margin-right: 20px;
+  
+  
+}
+
+
+.menu-fundo .gridicons img {
+
+    width: 40px;
+    height: 40px;
+    transition:  box-shadow  0.5s, background-color 0.5; 
+    border-radius: 50%;
+   
+}
+
+
+.menu-fundo  .gridicons a img:hover{
+
+    box-shadow: 0px 0px 6px rgb(54, 54, 54);
+    background-color: #0E7A81;
     
   
 }
+
+
+@media (max-width: 930px) {
+
+    .menu-fundo .gridicons  {
+        margin-top: 10px;
+        width: 100vw;
+
+    }
+
+    .menu-fundo .gridicons img {
+
+        background: white;
+        border: white 1px solid;
+        margin-top: 10px;
+       
+    }
+    
+}
+
+
+
+
+
 
 .portfolio {
 
   width: 100%;
   padding: 85px ;
   padding-bottom: 90px;
-  background-color: rgba(238, 238, 238, 0.685);
+ 
   
 }
 
@@ -286,7 +384,7 @@ margin-right: 15px;
 }
 
 .text-card {
-    background-color: rgba(29, 151, 145, 0.8);
+    background-color: #049ba3b9;
     width: 350px;
     height: 300px;
     transition: .5s ease;
@@ -588,16 +686,15 @@ margin-right: 15px;
 
 .sobre #linkfor a  {
 
-    background-color: rgb(28, 156, 150);
+    background-color: #03A8B2;
     padding: 9px 12px;
     padding-left: 18px;
     padding-right: 18px;
     margin: 10px;
     font-size: 14px;
-    font-weight: bold;
     transition:  background-color 0.5;
     color: rgb(255, 255, 255);
-    border-radius: 25px;
+    border-radius: 10px;
     
 }
 
@@ -648,11 +745,8 @@ margin-right: 15px;
 
     width: 100%;
     padding: 60px 50px 100px 50px;
-    background-color: rgba(238, 238, 238, 0.726);
+   /* background-color: rgba(238, 238, 238, 0.726);*/
     
-     
-   
-
 }
 
 #cursotitle {
@@ -729,7 +823,7 @@ margin-right: 15px;
 
     width: 100%;
     padding: 20px;
-    background-color: rgb(16, 116, 111);
+    background-color: #089097;
 }
 
 .rotape #autor{
@@ -756,6 +850,49 @@ margin-right: 15px;
 }
 
 
+.rede {
 
+    width: 100%;
+    padding: 20px;
+    background-image: url(../png/Frame\ 1.svg);
 
+}
 
+.rede h2 {
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
+
+.rede p {
+    color: rgb(235, 232, 232);
+    text-align: center;
+    
+}
+
+.rede #linkfor{
+
+  text-align: center;
+  margin: 30px;
+  margin-top: 45px;
+}
+
+.rede #linkfor a  {
+
+    background-color: #03a9b200;
+    padding: 7px 14px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 17px;
+    
+    border: solid 1.5px white;
+    transition:  background-color 0.5;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    
+}
+
+.rede #linkfor a:hover{
+
+    background-color: rgba(0, 0, 0, 0.767);
+}
