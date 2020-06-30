@@ -1,4 +1,4 @@
 # blog
 Site utilizando HTML e CSS
 
-Você pode jogar o jogo aqui: https://henriquecatunda.github.io/site/
+Você pode conferir o site aqui: https://henriquecatunda.github.io/site/
